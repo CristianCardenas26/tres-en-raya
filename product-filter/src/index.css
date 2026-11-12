@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f5;
+  color: #18181b;
+}
+.product-container {
+  width: 300px;
+  margin: 60px auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #d4d4d8;
+  border-radius: 8px;
+}
+
+.filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+  padding: 4px;
+  text-align: left;
+}
+
+.product-table th[colspan="2"] {
+  text-align: center;
+  padding-top: 12px;
+}
+
+.out-stock {
+  color: red;
+}

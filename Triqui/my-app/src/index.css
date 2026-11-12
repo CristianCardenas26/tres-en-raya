@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f5;
+  color: #18181b;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  font-size: 36px;
+  font-weight: bold;
+  height: 80px;
+  padding: 0;
+  text-align: center;
+  width: 80px;
+  cursor: pointer;
+}
+
+.square:hover {
+  background: #f8fafc;
+}
+
+.board {
+  display: inline-block;
+  margin: 16px 0;
+}
+
+.board-row {
+  display: flex;
+}
+
+.status {
+  margin: 12px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.game {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+}
+
+.setup {
+  min-height: 100vh;
+  width: min(100%, 360px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  padding: 24px;
+}
+
+.setup h1,
+.game h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.setup label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: bold;
+}
+
+.setup input,
+.setup select {
+  height: 40px;
+  padding: 8px;
+  border: 1px solid #a1a1aa;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.setup p,
+.players p {
+  margin: 0;
+}
+
+.players {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  padding: 10px 14px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.primary-button {
+  margin-top: 8px;
+}
